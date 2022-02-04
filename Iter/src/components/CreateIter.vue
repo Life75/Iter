@@ -20,12 +20,27 @@
       id="username"
       type="text"
       placeholder="Title of your Journey..."
+      v-model="getTitle"
     />
+    <button class="border" type="button" @click='onSave()'>Create your Iter</button>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import {ref, computed} from 'vue'
+
+const getTitle = ref('');
+
+
+
+function onSave() {
+  console.log(getTitle.value);
+  
+  //Create db and storage management  
+}
+
 </script>
 
-<style>
+<style scoped>
+
 </style>
