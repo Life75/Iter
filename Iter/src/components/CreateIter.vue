@@ -20,27 +20,41 @@
       id="username"
       type="text"
       placeholder="Title of your Journey..."
-      v-model="getTitle"
+      v-model="title"
     />
-    <button class="border" type="button" @click='onSave()'>Create your Iter</button>
+    <div class="my-4">
+      <label class="my-4" for="intent">Intent of your Iter</label>
+      <input
+        class=" border rounded w-full py-2 px-3"
+        type="text"
+        placeholder="Intent of this journey "
+      />
+    </div>
+
+    <div class="flex justify-center">
+      <button
+        class="border rounded px-5 py-4 my-5 hover:bg-orange-500"
+        type="button"
+        @click="onSave()"
+      >
+        Create your Iter
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref, computed} from 'vue'
+import { ref, computed } from "vue";
 
-const getTitle = ref('');
-
-
+const title = ref("");
+const description = ref("");
 
 function onSave() {
-  console.log(getTitle.value);
-  
-  //Create db and storage management  
-}
+  console.log(title.value);
 
+  //Create db and storage management
+}
 </script>
 
 <style scoped>
-
 </style>
