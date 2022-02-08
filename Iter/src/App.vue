@@ -4,10 +4,10 @@
 </script>
 
 <template>
-  <div>
+  <div class="">
     <div id="nav">
       <nav
-        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-cyan-900 mix-blend-normal "
+        class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-orange-500 mix-blend-normal "
       >
         <div class="container flex flex-row">
           <a
@@ -21,7 +21,7 @@
             "
           >
 
-            <router-link class="hover:text-cyan-500 text-lg font-semibold text-slate-100 dark:text-white text-center" to="/">Iter</router-link>
+            <router-link class="hover:text-orange-500 text-lg font-semibold text-slate-100 dark:text-white text-center" to="/">Iter</router-link>
             <router-link
               class="
                 text-slate-300 text-center
@@ -29,7 +29,7 @@
                 px-4
                 py-2.5
                 dark:text-white
-                hover:text-cyan-500
+                hover:text-orange-500
               "
               to="/About"
               >What is Iter?</router-link
@@ -45,4 +45,8 @@
 </template>
 
 <style>
+
+body {
+  color:black
+}
 </style>
