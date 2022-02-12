@@ -7,7 +7,7 @@
   <div class="">
     <div id="nav">
       <nav
-        class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-orange-500 mix-blend-normal "
+        class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mix-blend-normal "
       >
         <div class="container flex flex-row">
           <a
