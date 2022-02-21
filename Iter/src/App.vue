@@ -4,38 +4,20 @@
 </script>
 
 <template>
-  <div class="">
+  <div class>
     <div id="nav">
-      <nav
-        class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mix-blend-normal "
-      >
-        <div class="container flex flex-row">
-          <a
-            href="#"
-            class="
-              self-center
-              text-lg
-              font-semibold
-              whitespace-nowrap
-              dark:text-white
-            "
-          >
-
-            <router-link class="hover:text-orange-500 text-lg font-semibold text-slate-100 dark:text-white text-center" to="/">Iter</router-link>
+      <nav class="py-2.5 mix-blend-normal">
+        <div class="container flex">
+          <a href="#" class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">
             <router-link
-              class="
-                text-slate-300 text-center
-                whitespace-nowrap
-                px-4
-                py-2.5
-                dark:text-white
-                hover:text-orange-500
-              "
-              to="/About"
-              >What is Iter?</router-link
-            >
-            <!-- Space this out more for login to the left -->
-            <router-link class="text-left" to="#">Login</router-link>
+              class="text-black text-left whitespace-nowrap mx-20 hover:underline font-sans text-2xl"
+              to="/"
+            >Iter</router-link>
+            <span class="mr-10">
+              <router-link class="routerLink" to="/About">What is Iter?</router-link>
+              <!-- Space this out more for login to the left -->
+              <router-link class="routerLink" to="#">Login</router-link>
+            </span>
           </a>
         </div>
       </nav>
@@ -45,8 +27,11 @@
 </template>
 
 <style>
+.routerLink {
+  @apply   text-black text-center whitespace-nowrap px-4 py-2.5 hover:underline font-sans text-2xl;
+}
 
 body {
-  color:black
+  color: black;
 }
 </style>

@@ -19,7 +19,7 @@
           type="text"
           @focus="magic_flag = true"
           placeholder="Title of your Journey..."
-          v-model="title"
+          v-model="iter.title"
         />
       </span>
     </span>
@@ -30,13 +30,14 @@
           class="border rounded w-26 py-2 px-3 text-gray-700 flex self-center focus:outline-none focus:shadow-outline"
           type="text"
           placeholder="Intent of this journey "
+          v-model="iter.intent"
         />
       </span>
     </div>
 
     <div class="flex justify-center">
       <button
-        class="  text-white text-lg font-mono border rounded px-5 py-4 my-5 hover:bg-orange-500"
+        class="  text-white text-lg font-mono border rounded px-5 py-4 my-5 "
         type="button"
         @click="onSave()"
       >Create your Iter</button>
@@ -46,13 +47,30 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { IIter } from "../interfaces/IIter";
+import { ITimeline } from "../interfaces/ITimeline";
 
-const title = ref("");
-const description = ref("");
+var iter: IIter = {
+id: "",
+title: "",
+intent: "",
+difficulty: 0,
+timeline: undefined,
+tags: [],
+image: ""
+}
+
+var timeline: ITimeline = {
+startDate: undefined,
+endDate: undefined
+}
+
+
 const magic_flag = false;
 
 function onSave() {
-  console.log(title.value);
+  console.log(iter.title);
+  console.log(iter.intent);
 
   //Create db and storage management
 }
@@ -64,6 +82,8 @@ function onSave() {
 }
 
 .labelStyling {
-  @apply flex justify-center text-lg font-semibold dark:text-white
+  @apply flex justify-center text-lg font-semibold dark:text-white font-sans
 }
+
+
 </style>
