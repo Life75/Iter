@@ -8,14 +8,16 @@
     <div id="nav">
       <nav class="py-2.5 mix-blend-normal">
         <div class="flex space-x-4 justify-center">
+          <img class="" src="https://img.icons8.com/windows/64/000000/phoenix-framework.png"/>
           <a href="#" class=" self-center text-lg font-semibold whitespace-nowrap dark:text-white">
+           
             <router-link
               class="text-black text-left whitespace-nowrap hover:underline font-sans text-2xl"
               to="/"
             >Iter</router-link>
             
           </a>
-          <span class="flex justify-center  ">
+          <span class="flex justify-center py-2.5 ">
               <router-link class="routerLink" to="/About">What is Iter?</router-link>
               <!-- Space this out more for login to the left -->
               <router-link class="routerLink" to="#">Logs</router-link>
