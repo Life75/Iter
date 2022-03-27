@@ -6,9 +6,10 @@
 <template>
   <div class>
     <div id="nav">
-      <nav class="py-2.5 mix-blend-normal">
-        <div class="flex space-x-4 justify-center">
+      <nav class="py-2.5 mix-blend-normal shadow-lg">
+        <div class="flex flex-row space-x-4 justify-center md:flex-auto">
           <img class="" src="https://img.icons8.com/windows/64/000000/phoenix-framework.png"/>
+          
           <a href="#" class=" self-center text-lg font-semibold whitespace-nowrap dark:text-white">
            
             <router-link

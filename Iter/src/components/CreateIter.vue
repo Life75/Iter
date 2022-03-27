@@ -1,6 +1,6 @@
 <template>
   <div id="createIter" class=" ">
-    <h1 class="text-4xl text-center font-semibold py-5 dark:text-white">Time to design your Iter</h1>
+    <h1 class="text-4xl text-center font-semibold py-5 dark:text-white ">Time to design your Iter</h1>
     <span class>
       <label
         v-if="!magic_flag"
