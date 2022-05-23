@@ -1,4 +1,4 @@
 export interface ITimeline {
-    startDate: Date
-    endDate: Date
+    startDate?: Date
+    endDate?: Date
 }

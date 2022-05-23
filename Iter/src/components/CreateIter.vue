@@ -35,6 +35,15 @@
       </span>
     </div>
 
+    <div class="flex items-center justify-center">
+  <div class="datepicker relative form-floating mb-3 xl:w-96">
+    <input type="date"
+      class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      placeholder="Select a date" />
+    <label for="floatingInput" class="text-gray-700"></label>
+  </div>
+</div>
+
     <div class="flex justify-center">
       <button
         class="  text-white text-lg font-mono border rounded px-5 py-4 my-5 "
@@ -46,32 +55,33 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
 import { IIter } from "../interfaces/IIter";
 import { ITimeline } from "../interfaces/ITimeline";
-
-var iter: IIter = {
-id: "",
-title: "",
-intent: "",
-difficulty: 0,
-timeline: undefined,
-tags: [],
-image: ""
-}
 
 var timeline: ITimeline = {
 startDate: undefined,
 endDate: undefined
 }
 
+var iter: IIter = {
+id: "",
+title: "",
+intent: "",
+difficulty: 0,
+timeline: timeline,
+tags: [],
+image: ""
+}
 
-const magic_flag = false;
+
+
+
+var magic_flag = false;
 
 function onSave() {
   console.log(iter.title);
   console.log(iter.intent);
-
+  //
   //Create db and storage management
 }
 </script>
